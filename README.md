@@ -26,7 +26,7 @@ Why is this the fastest parser?
 -------------------------------
 The Stanford Parser server uses Jython to start-up the Stanford Parser.
 
-The server initlize the PCFG parser once, so parsing different sentences is **handled more efficiently and quickly**. Compared with other implementations of Stanford Parser, which initalizeren the PCFG parser every time from scratch.
+The server initialize the PCFG parser once, so parsing different sentences is **handled more efficiently and quickly**. Compared with other implementations of Stanford Parser, which initialize the PCFG parser every time from scratch.
 
 Copyright &amp; Licence
 -----------------------
