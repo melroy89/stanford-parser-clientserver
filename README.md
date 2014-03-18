@@ -14,11 +14,11 @@ Installation
 1. Download the Stanford Parser (http://nlp.stanford.edu/downloads/lex-parser.shtml#Download)
 2. Unpack the download into a local dir, place the stanford-parser.jar into this folder.
 3. Place the englishPCFG.ser.gz file into this folder as well.
-4. Start the Stanford server: ```./stanford-parser-server.py```
+4. Start the Stanford server: ```./stanford_parser_server.py```
 
 Testing
 -------
-Execute the client example:  ```./stanford-parser-client.py```
+Execute the client example:  ```./stanford_parser_client.py```
 
 
 Why is this the fastest parser?
