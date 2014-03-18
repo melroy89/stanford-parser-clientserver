@@ -1,6 +1,7 @@
-Fastest Stanford Parser with RPC interface
-==========================================
+Stanford Parser with RPC interface
+==================================
 The latest Stanford Parser combined with RPC interface for a server/client feature. It's the fastest Stanford Parser currently available. 
+Read below why it's the fastest.
 
 Requirements
 ------------
@@ -23,9 +24,9 @@ Execute the client example:  ```./stanford_parser_client.py```
 
 Why is this the fastest parser?
 -------------------------------
-It uses Jython to start-up the Stanford Parser, instead of initalize the Stanford Parser from cratch everytime...
+The Stanford Parser server uses Jython to start-up the Stanford Parser.
 
-This  peace of software runs a server where the PCFG parser is already initalized. So parsing different sentences is handled more efficiently and quickly.
+The server initlize the PCFG parser once, so parsing different sentences is **handled more efficiently and quickly**. Compared with other implementations of Stanford Parser, which initalizeren the PCFG parser every time from scratch.
 
 Copyright &amp; Licence
 -----------------------
