@@ -1,6 +1,6 @@
 Fastest Stanford Parser with RPC interface
 ==========================================
-The software uses the latest Stanford Parser combined with RPC interface for a server/client feature.
+The latest Stanford Parser combined with RPC interface for a server/client feature. It's the fastest Stanford Parser currently available. 
 
 Requirements
 ------------
