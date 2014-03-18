@@ -17,6 +17,8 @@ Installation
 3. Place the englishPCFG.ser.gz file into this folder as well.
 4. Start the Stanford server: ```./stanford_parser_server.py```
 
+**NOTE:** the server only accepts a list of words in purpose. Meaning tokenization of sentences/words can be done out-side the server. For example use NLTK for tokenize sentences and words from user input. For more info see: http://www.nltk.org/
+
 Testing
 -------
 Execute the client example:  ```./stanford_parser_client.py```
