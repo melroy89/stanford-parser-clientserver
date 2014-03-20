@@ -1,5 +1,5 @@
-Stanford Parser with RPC interface
-==================================
+Stanford Parser with client-server communication
+================================================
 This Stanford Parser Server/Client combines the Stanford Parser with a Pyro4 Interface for client-server communication. It's the fastest Stanford Parser currently available. 
 Read below why it's the fastest.
 
