@@ -39,6 +39,8 @@ The Stanford Parser server uses Jython to start-up the Stanford Parser.
 
 The server initialize the PCFG parser once, so parsing different sentences is **handled more efficiently and quickly**. Compared with other implementations of Stanford Parser, which initializes the PCFG parser every time from scratch.
 
+Besides that all, Pyro is a very fast &amp; lightweight Python-based Distributed Object Technology.
+
 Copyright &amp; Licence
 -----------------------
 The code is developed by Melroy van den Berg, inspired by Viktor Pekar. 
