@@ -29,10 +29,8 @@ Installation
 
 Testing
 -------
-Execute the client example:  
+Execute the client example: ```./stanford_client.py```
 
-
-```./stanford_client.py```
 
 
 Why is this the fastest parser?
