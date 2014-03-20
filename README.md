@@ -1,27 +1,38 @@
 Stanford Parser with RPC interface
 ==================================
-The latest Stanford Parser combined with RPC interface for a server/client feature. It's the fastest Stanford Parser currently available. 
+This Stanford Parser Server/Client combines the Stanford Parser with a Pyro4 Interface for client-server communication. It's the fastest Stanford Parser currently available. 
 Read below why it's the fastest.
+
+Example client is included!
 
 Requirements
 ------------
 - Stanford Parser 
 - Jython
+- Pyro4 (https://github.com/irmen/Pyro4)
+- Serpent (https://github.com/irmen/Serpent)
+
+
 - Python (needed for the client example only)
 
+**Note:** Be sure you install Pyro4 & Serpent for both Python and Jython.
 
 Installation
 ------------
+0. Be sure you meets all the requirements (see above)
 1. Download the Stanford Parser (http://nlp.stanford.edu/downloads/lex-parser.shtml#Download)
 2. Unpack the download into a local dir, place the stanford-parser.jar into this folder.
-3. Place the englishPCFG.ser.gz file into this folder as well.
-4. Start the Stanford server: ```./stanford_parser_server.py```
+3. Place the englishPCFG.ser.gz file into this folder as well (this file is located in the stanford-parser-x.x.x-models.jar file)
+4. Start the Stanford server: ```./stanford_server.py```
 
-**NOTE:** the server only accepts a list of words in purpose. Meaning tokenization of sentences/words can be done out-side the server. For example use NLTK for tokenize sentences and words from user input. For more info see: http://www.nltk.org/
+**IMPORTANT NOTE:** The server only accepts a list of words, for a reason! Meaning tokenization of sentences/words can be done out-side the server. For example use NLTK for tokenize sentences and words from user input. For more info see: http://www.nltk.org/
 
 Testing
 -------
-Execute the client example:  ```./stanford_parser_client.py```
+Execute the client example:  
+
+
+```./stanford_client.py```
 
 
 Why is this the fastest parser?
@@ -35,3 +46,4 @@ Copyright &amp; Licence
 The code is developed by Melroy van den Berg, inspired by Viktor Pekar. 
 
 Licensed under the Apache License, Version 2.0 (the "License"). See [LICENSE](LICENSE) file.
+
