@@ -1,5 +1,5 @@
-Stanford Parser with client-server communication
-================================================
+Stanford Parser Server
+======================
 This Stanford Parser Server/Client combines the Stanford Parser with a Pyro4 Interface for client-server communication. It's the fastest Stanford Parser currently available. 
 Read below why it's the fastest.
 
@@ -15,7 +15,7 @@ Requirements
 
 - Python (needed for the client example only)
 
-**Note:** Be sure you install Pyro4 & Serpent for both Python and Jython.
+**Note:** Be sure you install Pyro4 &amp; Serpent for both Python and Jython.
 
 Installation
 ------------
@@ -23,8 +23,9 @@ Installation
 1. Download the Stanford Parser (http://nlp.stanford.edu/downloads/lex-parser.shtml#Download)
 2. Unpack the download into a local dir, place the stanford-parser.jar into this folder.
 3. Place the englishPCFG.ser.gz file into this folder as well (this file is located in the stanford-parser-x.x.x-models.jar file)
-4. Start the Name server: ```python -m Pyro4.naming```
-5. Start the Stanford server: ```./stanford_server.py```
+4. In terminal: ```export PYRO_SERIALIZERS_ACCEPTED=pickle```
+5. Start the Name server: ```python -m Pyro4.naming```
+6. Start the Stanford server: ```./stanford_server.py```
 
 **IMPORTANT NOTE:** The server only accepts a list of words, for a reason! Meaning tokenization of sentences/words can be done out-side the server. For example use NLTK for tokenize sentences and words from user input. For more info see: http://www.nltk.org/
 
