@@ -9,13 +9,13 @@ __version__ = "0.1"
 
 import sys
 import Pyro4
-Pyro4.config.SERIALIZER = 'pickle'
-Pyro4.config.SERIALIZERS_ACCEPTED.add('pickle')
+
+PYRO_NAME = "PYRONAME:stanford.server"
 
 wordList = ['Hello', ',', 'my', 'name', 'is', 'Melroy']
 try:
 	# Connect to the Stanford Server
-	server=Pyro4.Proxy("PYRONAME:stanford.server")
+	server=Pyro4.Proxy(PYRO_NAME)
 	# Sent the request to the server
 	tree = server.parse(wordList)
 	print tree
